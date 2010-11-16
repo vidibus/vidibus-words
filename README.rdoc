@@ -1,4 +1,4 @@
-= vidibus-stopwords
+= vidibus-words
 
 This gem provides handling of words. It ships with a list of stop words and allows extraction of keywords from a string.
 
@@ -9,7 +9,7 @@ This gem is part of the open source SOA framework Vidibus: http://vidibus.org
 
 Add the dependency to the Gemfile of your application:
 
-  gem "vidibus-stopwords"
+  gem "vidibus-words"
 
 Then call bundle install on your console.
 
