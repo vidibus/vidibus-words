@@ -14,7 +14,7 @@ Add the dependency to the Gemfile of your application:
 Then call bundle install on your console.
 
 
-= Usage
+== Usage
 
 TODO: describe
 
