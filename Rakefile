@@ -9,11 +9,12 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "vidibus-words"
     gem.summary = %Q{Tools for handling of words.}
-    gem.description = %Q{Contains stop words lists and methods to get words from strings.}
+    gem.description = %Q{Contains stop words lists and methods to extract keywords words from strings.}
     gem.email = "andre@vidibus.com"
     gem.homepage = "http://github.com/vidibus/vidibus-words"
     gem.authors = ["Andre Pankratz"]
-    # gem.add_dependency "vidibus-core_extensions"
+    gem.add_dependency "rails", "~> 3.0.0"
+    gem.add_dependency "vidibus-core_extensions"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

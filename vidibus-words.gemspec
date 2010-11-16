@@ -5,24 +5,36 @@
 
 Gem::Specification.new do |s|
   s.name = %q{vidibus-words}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
-  s.date = %q{2010-11-15}
-  s.description = %q{Contains stop words lists and methods to get words from strings.}
+  s.date = %q{2010-11-16}
+  s.description = %q{Contains stop words lists and methods to extract keywords words from strings.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
   ]
   s.files = [
-    ".document",
+    ".bundle/config",
+     ".document",
      ".gitignore",
+     ".rspec",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "spec/spec_helper.rb"
+     "VERSION",
+     "config/locales/de.yml",
+     "config/locales/en.yml",
+     "config/locales/es.yml",
+     "lib/vidibus-words.rb",
+     "lib/vidibus/words.rb",
+     "spec/spec_helper.rb",
+     "spec/vidibus/words_spec.rb",
+     "vidibus-words.gemspec"
   ]
   s.homepage = %q{http://github.com/vidibus/vidibus-words}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -39,9 +51,15 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<rails>, ["~> 3.0.0"])
+      s.add_runtime_dependency(%q<vidibus-core_extensions>, [">= 0"])
     else
+      s.add_dependency(%q<rails>, ["~> 3.0.0"])
+      s.add_dependency(%q<vidibus-core_extensions>, [">= 0"])
     end
   else
+    s.add_dependency(%q<rails>, ["~> 3.0.0"])
+    s.add_dependency(%q<vidibus-core_extensions>, [">= 0"])
   end
 end
 
