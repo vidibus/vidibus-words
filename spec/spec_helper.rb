@@ -1,9 +1,13 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'vidibus-stopwords'
-require 'spec'
-require 'spec/autorun'
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 
-Spec::Runner.configure do |config|
-  
+require "rubygems"
+require "rspec"
+require "rr"
+require "vidibus-words"
+
+RSpec.configure do |config|
+  config.mock_with :rr
 end
+
+I18n.load_path += Dir[File.join('config', 'locales', '**', '*.{rb,yml}')]
