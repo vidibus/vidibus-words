@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
   s.date = %q{2010-11-16}
-  s.description = %q{Contains stop words lists and methods to extract keywords words from strings.}
+  s.description = %q{Contains stop words lists and methods to extract keywords from strings.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
     "LICENSE",
