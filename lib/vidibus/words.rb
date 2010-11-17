@@ -83,7 +83,7 @@ module Vidibus
           split(/ /)
       end
 
-      # Returns a list of words ordered by their occurrance.
+      # Returns a list of words ordered by occurrence.
       # All words will be converted to downcase.
       def sort_by_occurrence(list)
         map = {}
