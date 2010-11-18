@@ -9,7 +9,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "vidibus-words"
     gem.summary = %Q{Tools for handling of words.}
-    gem.description = %Q{Contains stop words lists and methods to extract keywords from strings.}
+    gem.description = %Q{Contains stop words lists and methods for extracting keywords from strings.}
     gem.email = "andre@vidibus.com"
     gem.homepage = "http://github.com/vidibus/vidibus-words"
     gem.authors = ["Andre Pankratz"]
