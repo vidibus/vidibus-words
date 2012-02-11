@@ -43,7 +43,7 @@ module Vidibus
         count = 0
         _stopwords = Vidibus::Words.stopwords(*locales)
         for word in sort
-          clean = word.permalink.gsub("-","")
+          clean = word.permalink.gsub('-','')
           unless _stopwords.include?(clean)
             list << word
             count += 1
@@ -62,7 +62,7 @@ module Vidibus
         locales = I18n.available_locales if locales.empty?
         stopwords = []
         for locale in locales
-          translation = I18n.t("vidibus.stopwords", :locale => locale)
+          translation = I18n.t('vidibus.stopwords', :locale => locale)
           next if translation.is_a?(String)
           stopwords << translation
         end
@@ -71,16 +71,16 @@ module Vidibus
 
       # Returns a list of words from given string.
       def words(string)
-        allowed = [" ", "a-z", "A-Z", "0-9"] + String::LATIN_MAP.values
-        disallowed = ["¿", "¡"] # Add some disallowed chars that cannot be catched. TODO: Improve!
-        match = /[^#{allowed.join("")}]/
+        allowed = [' ', 'a-z', 'A-Z', '0-9'] + String::LATIN_MAP.values
+        disallowed = ['¿', '¡'] # Add some disallowed chars that cannot be catched. TODO: Improve!
+        match = /[^#{allowed.join('')}]/
         string.
-          gsub(/\s+/mu, " ").
-          gsub(/[#{disallowed.join}]/u, "").
-          gsub(/#{match}+ /u, " ").
-          gsub(/ #{match}+/u, " ").
-          gsub(/#{match}+$/u, "").
-          gsub(/^#{match}+/u, "").
+          gsub(/\s+/mu, ' ').
+          gsub(/[#{disallowed.join}]/u, '').
+          gsub(/#{match}+ /u, ' ').
+          gsub(/ #{match}+/u, ' ').
+          gsub(/#{match}+$/u, '').
+          gsub(/^#{match}+/u, '').
           split(/ /)
       end
 
