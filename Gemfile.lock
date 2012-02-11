@@ -73,7 +73,6 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.6)
     rake (0.8.7)
-    rcov (1.0.0)
     rdoc (3.12)
       json (~> 1.4)
     rr (1.0.4)
@@ -103,7 +102,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (>= 1.0.0)
   rake
-  rcov
   rdoc
   rr
   rspec
