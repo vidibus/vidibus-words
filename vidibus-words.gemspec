@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = 'vidibus-words'
 
   s.add_dependency 'rails', '>= 3'
-  s.add_dependency 'vidibus-core_extensions'
+  s.add_dependency 'vidibus-core_extensions', '>= 0.4.1'
 
   s.add_development_dependency 'bundler', '>= 1.0.0'
   s.add_development_dependency 'rake'
