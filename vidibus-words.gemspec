@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/vidibus/vidibus-words'
   s.summary     = 'Tools for handling (stop-) words'
   s.description = 'Contains stop words lists and methods to extract keywords from strings.'
+  s.license     = 'MIT'
 
   s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project         = 'vidibus-words'
