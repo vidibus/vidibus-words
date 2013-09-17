@@ -1,7 +1,4 @@
 # encoding: utf-8
-
-require 'vidibus/core_extensions/string'
-
 module Vidibus
   class Words
     VERSION = '0.0.2'
