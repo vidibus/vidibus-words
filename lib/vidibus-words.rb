@@ -1,3 +1,4 @@
+require 'vidibus-core_extensions'
 require 'vidibus/words'
 
 # Start a Rails Engine to load translations containing stopwords.
