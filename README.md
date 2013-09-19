@@ -1,4 +1,4 @@
-# Vidibus::Words [![](http://travis-ci.org/vidibus/vidibus-words.png)](http://travis-ci.org/vidibus/vidibus-words)
+# Vidibus::Words [![Build Status](https://travis-ci.org/vidibus/vidibus-words.png)](https://travis-ci.org/vidibus/vidibus-words)
 
 This gem provides handling of words. It ships with a list of stop words in English, German, and Spanish and allows extraction of keywords from a string.
 
