@@ -5,7 +5,6 @@ require 'rubygems'
 require 'rspec'
 require 'rr'
 require 'active_support/core_ext'
-require 'vidibus-core_extensions'
 require 'vidibus-words'
 
 RSpec.configure do |config|
