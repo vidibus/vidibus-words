@@ -71,6 +71,7 @@ module Vidibus
 
       # Returns a list of words from given string.
       def words(string)
+        return [] if string.nil?
         allowed = [' ', 'a-z', 'A-Z', '0-9'] + String::LATIN_MAP.values
         disallowed = ['¿', '¡'] # Add some disallowed chars that cannot be catched. TODO: Improve!
         match = /[^#{allowed.join('')}]/

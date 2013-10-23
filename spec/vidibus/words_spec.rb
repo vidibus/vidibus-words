@@ -164,6 +164,10 @@ describe 'Vidibus::Words' do
     it 'should remove double non-word chars' do
       Vidibus::Words.words('-¡Defensa india de dama!-').should eql(%w[Defensa india de dama])
     end
+
+    it 'should not fail on nil input string' do
+      Vidibus::Words.words(nil).should eq([])
+    end
   end
 
   describe '.sort_by_occurrence' do
