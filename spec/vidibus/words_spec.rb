@@ -7,6 +7,11 @@ describe 'Vidibus::Words' do
       expect {Vidibus::Words.new}.to raise_error(ArgumentError)
     end
 
+    it 'should accept nil and convert it to an empty array' do
+      words = Vidibus::Words.new(nil)
+      words.input.should eq('')
+    end
+
     it 'should accept an additional argument to set locales' do
       words = Vidibus::Words.new('hello', :en)
       words.locales.should eql([:en])
@@ -79,6 +84,11 @@ describe 'Vidibus::Words' do
 
     it 'should accept an optional length param' do
       words.keywords(30).length.should eql(30)
+    end
+
+    it 'should not fail on nil input string' do
+      words = Vidibus::Words.new(nil)
+      words.keywords.should eq []
     end
   end
 

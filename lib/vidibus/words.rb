@@ -6,7 +6,7 @@ module Vidibus
     class MissingLocaleError < StandardError; end
 
     def initialize(input, loc = [])
-      @input = input
+      @input = input || ''
       self.locale = loc
     end
 
