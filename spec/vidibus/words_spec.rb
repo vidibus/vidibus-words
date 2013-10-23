@@ -7,7 +7,7 @@ describe 'Vidibus::Words' do
       expect {Vidibus::Words.new}.to raise_error(ArgumentError)
     end
 
-    it 'should accept nil and convert it to an empty array' do
+    it 'should accept nil and convert it to an empty string' do
       words = Vidibus::Words.new(nil)
       words.input.should eq('')
     end
