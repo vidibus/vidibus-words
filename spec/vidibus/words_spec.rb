@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe 'Vidibus::Words' do
+describe Vidibus::Words do
   describe 'initialization' do
     it 'should require an input string' do
       expect {Vidibus::Words.new}.to raise_error(ArgumentError)
