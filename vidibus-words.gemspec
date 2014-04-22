@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rr'
+  s.add_development_dependency 'simplecov'
 
   s.files = Dir.glob('{lib,app,config}/**/*') + %w[LICENSE README.md Rakefile]
   s.require_path = 'lib'
