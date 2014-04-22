@@ -90,6 +90,11 @@ describe 'Vidibus::Words' do
       words = Vidibus::Words.new(nil)
       words.keywords.should eq []
     end
+
+    it 'should not downcase word input' do
+      keywords = words.keywords
+      words.list.should include('Hoy')
+    end
   end
 
   describe '.stopwords' do
