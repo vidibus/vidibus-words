@@ -90,7 +90,7 @@ module Vidibus
         map = {}
         count = [999, list.length].min
         for word in list
-          word.downcase!
+          word = word.downcase
           map[word] ||= count
           map[word] += 1000
           count -= 1 if count > 0
