@@ -1,7 +1,7 @@
 # encoding: utf-8
 module Vidibus
   class Words
-    VERSION = '0.0.3'
+    VERSION = '0.0.4'
 
     class MissingLocaleError < StandardError; end
 
